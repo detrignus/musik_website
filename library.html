@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Website - Моя библиотека</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>
+                <font color="#FF2626">I AM MUSIK</font>
+            </h1>
+            <navigation>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Навигатор</a></li>
+                    <li><a href="artists.html">Исполнители</a></li>
+                    <li><a href="library.html">Библиотека</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </navigation>
+            <div class="search-bar">
+                <form action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Поиск музыки...">
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="library-page">
+            <div class="container">
+                <h2>Моя библиотека</h2>
+                <p>Здесь вы можете найти всю музыку, которую вы добавили в свою библиотеку.</p>
+
+                <div class="library-sections">
+                    <div class="library-section">
+                        <h3>Плейлисты</h3>
+                        <ul class="playlist-list">
+                            <li><a href="#">Мой любимый плейлист</a></li>
+                            <li><a href="#">Музыка для тренировок</a></li>
+                            <li><a href="#">Расслабляющая музыка</a></li>
+                            <li><a href="#">Дорожный плейлист</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="library-section">
+                        <h3>Альбомы</h3>
+                        <div class="album-grid">
+                            <div class="album-item">
+                                <img src="6318259497363250181.jpg" alt="Альбом 1">
+                                <h4>Название альбома 1</h4>
+                                <p>Исполнитель 1</p>
+                            </div>
+                            <div class="album-item">
+                                <img src="13340605235780129789.jpg" alt="Альбом 2">
+                                <h4>Название альбома 2</h4>
+                                <p>Исполнитель 2</p>
+                            </div>
+                            <div class="album-item">
+                                <img src="18094697778724036454.jpg" alt="Альбом 3">
+                                <h4>Название альбома 3</h4>
+                                <p>Исполнитель 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

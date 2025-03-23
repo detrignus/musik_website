@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Website - Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <header>
+        <div class="container">
+            <h1>
+                <font color="#FF2626">I AM MUSIK</font>
+            </h1>
+            <navigation>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Навигатор</a></li>
+                    <li><a href="artists.html">Исполнители</a></li>
+                    <li><a href="library.html">Библиотека</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </navigation>
+            <div class="search-bar">
+                <form action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Поиск музыки...">
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div class="container">
+                <h2>Откройте для себя новую музыку</h2>
+                <p>Сохраняйте треки, подписывайтесь на исполнителей и создавайте плейлисты.</p>
+                <a href="#" class="button">Создать аккаунт</a>
+        </div>
+
+        <section class="featured-music">
+            <div class="container">
+                <h2>Популярная музыка</h2>
+                <div class="music-grid">
+                    <div class="music-item">
+                        <img src="короли.png" alt="Альбом 1">
+                        <h3>Свит дримс</h3>
+                        <p>Ежемесячные</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="кантейнир.jpg" alt="Альбом 2">
+                        <h3>Блёвбургер</h3>
+                        <p>Kunteynir</p>
+                    </div>
+                    <div class="music-item">
+                        <img src="фанат.jpg" alt="Альбом 3">
+                        <h3>В этой траве</h3>
+                        <p>СЕРЕГА ПИРАТ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="artists">
+            <div class="container">
+                <h2>Исполнители</h2>
+                <div class="artist-list">
+                    <div class="artist-item">
+                        <img src="" alt="Исполнитель 1">
+                        <h3>Исполнитель 1</h3>
+                        <p>Жанр</p>
+                    </div>
+                    <div class="artist-item">
+                        <img src="" alt="Исполнитель 2">
+                        <h3>Исполнитель 2</h3>
+                        <p>Жанр</p>
+                    </div>
+                    <div class="artist-item">
+                        <img src="" alt="Исполнитель 3">
+                        <h3>Исполнитель 3</h3>
+                        <p>Жанр</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
