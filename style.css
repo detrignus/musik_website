@@ -53,9 +53,6 @@ navigation a {
     border-radius: 5px;
 }
 
-.featured-music {
-    padding: 30px 0;
-}
 
 .music-grid {
     display: grid;
@@ -69,7 +66,7 @@ navigation a {
     height: auto;
 }
 
-.artists {
+.page {
     padding: 30px 0;
 }
 
@@ -80,26 +77,35 @@ navigation a {
 }
 
 
+.artist img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .artist-item img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
-.artists-page {
-    padding: 30px 0;
-}
+
 
 .artist-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+
+}
+.artist {
+    padding: 15px;
+    text-align: center;
 }
 
 .artist-item {
-    border: 1px solid #000000;
     padding: 15px;
     text-align: center;
+    border: 1px solid #000000;
 }
 .search-bar {
     display: flex;
@@ -122,23 +128,19 @@ navigation a {
     border-radius: 4px;
     cursor: pointer;
 }
-.library-page {
-    padding: 30px 0;
-}
+
 
 .library-sections {
     display: flex;
     flex-wrap: wrap;  
-    justify-content: space-between; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
 }
 
 .library-section {
-    width: 50%; 
+    width: 100%;
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ffffff;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
 }
 
 .playlist-list, .artist-list {
@@ -154,6 +156,7 @@ navigation a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
+
 }
 
 .album-item {
@@ -164,5 +167,8 @@ navigation a {
     max-width: 100%;
     height: auto;
 }
-
+footer {
+    background-color: #333;
+    padding: 20px 0;
+}
 
