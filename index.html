@@ -3,7 +3,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Music Website - Главная</title>
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"/> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
+
     <header>
         <div class="container">
             <h1>
@@ -11,17 +14,18 @@
             </h1>
             <navigation>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Навигатор</a></li>
-                    <li><a href="artists.html">Исполнители</a></li>
-                    <li><a href="library.html">Библиотека</a></li>
-                    <li><a href="#">О нас</a></li>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Главная</li>
+                            <li class="breadcrumb-item"><a href="library.html">Библиотека</a></li>
+                        </ol>
+                    </nav>
                 </ul>
             </navigation>
             <div class="search-bar">
                 <form action="/search" method="GET">
                     <input type="text" name="q" placeholder="Поиск музыки...">
-                    <button type="submit">Найти</button>
+                    <button type="button" class="btn btn-primary">Найти</button>
                 </form>
             </div>
         </div>
@@ -32,24 +36,23 @@
         <div class="container">
                 <h2>Откройте для себя новую музыку</h2>
                 <p>Сохраняйте треки, подписывайтесь на исполнителей и создавайте плейлисты.</p>
-                <a href="#" class="button">Создать аккаунт</a>
+                <button type="button" class="btn btn-primary">Создать аккаунт</button>
         </div>
-
             <div class="container">
                 <h2>Популярная музыка</h2>
                 <div class="music-grid">
                     <div class="music-item">
-                        <img src="images/короли.png" alt="Короли абстракта 6">
+                        <img src="images/kings.png" alt="Короли абстракта 6">
                         <h3>Свит дримс</h3>
                         <p>Ежемесячные</p>
                     </div>
                     <div class="music-item">
-                        <img src="images/кантейнир.jpg" alt="Кантейнир">
+                        <img src="images/burger.jpg" alt="Кантейнир">
                         <h3>Блёвбургер</h3>
                         <p>Kunteynir</p>
                     </div>
                     <div class="music-item">
-                        <img src="images/фанат.jpg" alt="Ну почему ты еще не фанат,?">
+                        <img src="images/fan.jpg" alt="Ну почему ты еще не фанат?">
                         <h3>Ну почему ты еще не фанат?</h3>
                         <p>СЕРЕГА ПИРАТ</p>
                     </div>
@@ -60,17 +63,17 @@
                 <h2>Исполнители</h2>
                 <div class="artist-list">
                     <div class="artist">
-                        <img src="images/паша техник.jpg" alt="Паша Техник">
+                        <img src="images/pasha_texnic.jpg" alt="Паша Техник">
                         <h3>Паша Техник</h3>
                         <p>Хип-хоп</p>
                     </div>
                     <div class="artist">
-                        <img src="images/слава.jpg" alt="Слава КПСС">
+                        <img src="images/slava.jpg" alt="Слава КПСС">
                         <h3>Слава КПСС</h3>
                         <p>Рэп</p>
                     </div>
                     <div class="artist">
-                        <img src="images/перега сират.jpg" alt="Серега Пират">
+                        <img src="images/serega_pirate.jpg" alt="Серега Пират">
                         <h3>Серега Пират</h3>
                         <p>Рок</p>
                     </div>
