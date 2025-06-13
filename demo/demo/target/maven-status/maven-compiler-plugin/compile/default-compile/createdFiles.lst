@@ -1,5 +1,0 @@
-com\example\demo\DemoApplication.class
-com\example\demo\controller\DemoController.class
-com\example\demo\repository\FeedbackRepository.class
-com\example\demo\DemoDTO.class
-com\example\demo\model\Feedback.class
